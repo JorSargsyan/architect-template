@@ -8,6 +8,7 @@
     <title>Architect</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
@@ -17,19 +18,27 @@
 
 
     <div class="parallax-container">
+        
         <div id = "header" class="nav-wrapper container row">
-            <div class="col m4">
+            <div class="col s10 m7 l6">
                 <div class="cube left">
-                    <p >MC</p>
+                    <p>MC</p>
                 </div>
-                <a href="#" class="brand-logo"><span>Michelangelo</span></a>
+                <p id="logo">Michelangelo<a  href="#" class="brand-logo"></a></p>
             </div>
-            <div class="col m8 ">
-                <ul id="nav-list" class="">
-                    <li class="left active">Main</li>
-                    <li class="left">Portfolio</li>
-                    <li class="left">About us</li>
-                    <li class="left">News</li>
+            <div class="col s2 m5 l6">
+                <ul id="nav-list" class="right hide-on-med-and-down">
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+                <a href="#" data-activates="mobile-demo" id="menu" class="button-collapse right hide-on-large-only show-on-medium-and-down "><i class="material-icons">menu</i></a>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">News</a></li>
                 </ul>
             </div>
         </div>
@@ -37,13 +46,13 @@
     </div>
     <div id="main" class="section">
         <div class="row container">
-             <h5>ИЗБРАННЫЕ ПРОЕКТЫ</h5>
+             <h5 class="title">ИЗБРАННЫЕ ПРОЕКТЫ</h5>
             <section class="content row">
-                <div class="col s7"><img class="project-img left" src="img/p1.jpg" alt=""></div>
-                <div class="col s5">
+                <div class="col s12 m7 l7"><img  class="project-img left responsive-img" src="img/p1.jpg" alt=""></div>
+                <div class="col s12 m5 l5">
                     <div class="innerSect">
                         <p>01.07</p>
-                        <h4>ПРОЕКТ 1,МОСКВА</h4>
+                        <h5>ПРОЕКТ 1,МОСКВА</h5>
                         <p>Это текст. Кликните дважды, чтобы отредактировать и рассказать посетителям о себе.</p>
                         <li><a href="#">Смотреть</a></li>
                     </div>
@@ -51,11 +60,11 @@
 
             </section>
             <section class="content row">
-                <div class="col s7"><img class="project-img left" src="img/p2.jpg" alt=""></div>
-                <div class="col s5">
+                <div class="col s12 m7 l7"><img class="project-img left responsive-img" src="img/p2.jpg" alt=""></div>
+                <div class="col s12 m5 l5">
                     <div class="innerSect">
                         <p>01.07</p>
-                        <h4>ПРОЕКТ 2,Петербург</h4>
+                        <h5>ПРОЕКТ 2,Петербург</h5>
                         <p>Это текст. Кликните дважды, чтобы отредактировать и рассказать посетителям о себе.</p>
                         <li><a href="#">Смотреть</a></li>
                     </div>
@@ -63,11 +72,11 @@
 
             </section>
             <section class="content row">
-                <div class="col s7"><img class="project-img left" src="img/p3.jpg" alt=""></div>
-                <div class="col s5">
+                <div class="col s12 m7 l7"><img class="project-img left responsive-img" src="img/p3.jpg" alt=""></div>
+                <div class="col s12 m5 l5">
                     <div class="innerSect">
                         <p>01.07</p>
-                        <h4>ПРОЕКТ 3,МОСКВА</h4>
+                        <h5>ПРОЕКТ 3,МОСКВА</h5>
                         <p>Это текст. Кликните дважды, чтобы отредактировать и рассказать посетителям о себе.</p>
                         <li><a href="#">Смотреть</a></li>
                     </div>
@@ -76,19 +85,19 @@
             </section>
             <h5>ИЗБРАННЫЕ ПРОЕКТЫ</h5>
             <div class=" row news">
-                <div class="col s4">
+                <div class="col s12 m4">
                     <h1>01</h1>
                     <p>16   /   06   /   2023</p>
                     <p>Это текст. Кликните дважды, чтобы отредактировать и рассказать посетителям о себе.</p>
                     <li><a href="#">Читать</a></li>
                 </div>
-                <div class="col s4">
+                <div class="col m4 s12">
                     <h1>01</h1>
                     <p>16   /   06   /   2023</p>
                     <p>Это текст. Кликните дважды, чтобы отредактировать и рассказать посетителям о себе.</p>
                     <li><a href="#">Читать</a></li>
                 </div>
-                <div class="col s4">
+                <div class="col m4 s12">
                     <h1>01</h1>
                     <p>16   /   06   /   2023</p>
                     <p>Это текст. Кликните дважды, чтобы отредактировать и рассказать посетителям о себе.</p>
@@ -101,16 +110,7 @@
     </div>
     <div class="container-fluid footer">
         <div class="container row">
-            <div class="col s6 footer-text">
-                <h6>СВЯЗАТЬСЯ</h6>
-                <span>Тел. +7 (495) 000-00-00</span>
-                <span>Ул. Арбат, 1а </span>
-                <span>Email: info@mysite.ru</span>
-                <span>Москва, Россия</span>
-                <p>2023 Архитектурная компания «Микеланджело».Сайт создан на Wix.com</p>
-    
-            </div>
-            <div class="col s6 footer-mail">
+            <div class="col s12 m6 footer-mail">
                 <h6>НАПИСАТЬ</h6>
                 <div>
                     <input type="text" placeholder="name">
@@ -119,6 +119,16 @@
                     <button class="btn grey #9e9e9e" type="submit">Отправить</button>
                 </div>
             </div>
+            <div class="col s12 m6 footer-text">
+                <h6>СВЯЗАТЬСЯ</h6>
+                <span>Тел. +7 (495) 000-00-00</span>
+                <span>Ул. Арбат, 1а </span>
+                <span>Email: info@mysite.ru</span>
+                <span>Москва, Россия</span>
+                <p>2023 Архитектурная компания «Микеланджело».Сайт создан на Wix.com</p>
+    
+            </div>
+    
         </div>
     </div>
     <script src="js/main.js"></script>
